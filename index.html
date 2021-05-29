@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Over The Rainbow</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Fredoka+One&family=Viga&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="title icon" type="image/png" href="images/title-img.png"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+		  
+        
+        <style>
+            ::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px grey;
+            }
+        
+            ::-webkit-scrollbar-thumb {
+                background: #5484a9;
+            }
+            html {
+                padding: 0;
+                margin: 0;
+                background: url(https://scontent.fcrk1-2.fna.fbcdn.net/v/t1.15752-9/187507729_228609669032423_5564738251764966908_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_eui2=AeF4nn8c37cFAX8bMGjSCSOaXUVgSEPueKVdRWBIQ-54pSa8Bc5b6th7TaTupzSM01x1bBCEdPdaIC5JFe_eJp3z&_nc_ohc=bRTxEWosoBYAX-NwjAH&_nc_ht=scontent.fcrk1-2.fna&oh=13841a8aaf02c611980869984fda9715&oe=60D04BE3);
+            }
+            body {
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            background-color: white;
+            text-align: center;
+            font-family: sans-serif;
+                background: url(https://scontent.fcrk1-2.fna.fbcdn.net/v/t1.15752-9/187507729_228609669032423_5564738251764966908_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_eui2=AeF4nn8c37cFAX8bMGjSCSOaXUVgSEPueKVdRWBIQ-54pSa8Bc5b6th7TaTupzSM01x1bBCEdPdaIC5JFe_eJp3z&_nc_ohc=bRTxEWosoBYAX-NwjAH&_nc_ht=scontent.fcrk1-2.fna&oh=13841a8aaf02c611980869984fda9715&oe=60D04BE3);
+            }
+            
+            #header {
+                height: 200px;
+                width: 100%;
+            }
+            
+            nav {
+                width: 100%;
+                margin-top: 10px;
+            }
+             .navbar-brand {
+					  font-family: 'Nunito', sans-serif;
+						font-size: 25pt;
+						color: white;
+						}
+				
+					.navbar-nav {
+						color: white;
+						font-family: sans-serif;
+                        margin-top: 15px;
+				}
+				
+				.bg-color {
+					background-color: #5484a9;
+				}
+				
+				.nav-link {
+					text-align: center;
+				} 
+            
+            .logo {
+                float: left;
+            }
+            
+            .card {
+                display: inline-block;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border: 2px solid #5484a9;
+            }
+            #deliveryInfo {
+                width: 75%;
+                display: inline-block;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border: 2px solid #5484a9;
+                margin: 40px 0px 50px 16px;
+                background-color: white;
+            }
+            #cartContent {
+                float: left;
+                margin: 40px 0px 50px 0px;
+                height: 400px;
+                overflow: auto;
+            }
+            #button {
+                background-color:#5484a9;
+                color: whitesmoke;
+                font-family: 'Rubik', sans-serif;
+                font-weight: bold;
+                transition-duration: 0.3s;
+                border: none;
+            }
+			#rem {
+				background-color: Transparent;
+				background-repeat:no-repeat;
+				border: none;
+				cursor:pointer;
+				overflow: hidden;
+				outline:none;
+				color:red;
+			}
+            h4 {
+                margin-top: 40px;
+                margin-bottom: 20px;
+                font-family: 'Rubik', sans-serif;
+                font-weight: bolder;
+                font-size: 40px;
+            }
+            h6 {
+                margin-top: 10px;
+                color: #fb8a8a;
+                font-weight: bold;
+            }
+            
+            #button:hover {
+                background-color: #91aec4;
+            }
+             #button:active {
+                background-color: #fb8a8a;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+        
+             <nav class="navbar navbar-expand-sm bg-color navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t1.15752-9/188312681_1140095796484742_2200803328771637157_n.png?_nc_cat=100&ccb=1-3&_nc_sid=ae9488&_nc_eui2=AeHCCRkXq__r9fyBezddvm2UayTKxGJtlKdrJMrEYm2Up6zu5iomwRONnoMv3TOLZYUDpmOCmrJwq2CKyP4SBnd9&_nc_ohc=sTKsaff_HlMAX9CdiKW&_nc_ht=scontent.fcrk1-3.fna&oh=e1f92825d41413e9283888a9bb1f874b&oe=60D04B5E" alt="logo" width="60px" height="60px">
+            </a>
+            <a class="navbar-brand" href="#">OVER THE RAINBOW</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="content.html">Donate Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About the Company</a>
+                    </li>    
+                </ul>
+            </div>  
+        </nav>
+        <br>
+        </div>
+            
+        <div class="container">
+            <h4>FANTASY BOOKS</h4>
+            <div class="card-group" id="fantasyBook1">
+                
+                <div class="card" id="maryPoppins">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51CAsHD9YfL._SX334_BO1,204,203,200_.jpg" alt="mary poppins" height="200px"><br><br>Mary Poppins by P.L. Travers
+                    <h6>₱245.00</h6><br>
+                    <button class="btn btn-primary" onclick="addItem1()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="narnia">
+                    <img src="https://gruesomeandglorious.files.wordpress.com/2015/05/narnia.jpg" alt="The Lion, The Witch, and The Wardrobe" height="200px"><br><br>The Lion, The Witch, and The Wardrobe by C.S. Lewis
+                    <h6>₱290.50</h6>
+                    <button class="btn btn-primary" onclick="addItem2()" id="button">Add to Cart</button>
+                </div>
+            
+                <div class="card" id="howls">
+                    <img src="https://m.media-amazon.com/images/I/51ISwYcrAxL.jpg" alt="Howl's Moving Castle" height="200px"><br><br>Howl’s Moving Castle by Diana Wynne Jones
+                    <h6>₱335.00</h6><br>
+                    <button class="btn btn-primary" onclick="addItem3()" id="button">Add to Cart</button>
+                </div>
+            </div> 
+        <br>
+        <div class="card-group" id="fantasyBook2">
+            
+            <div class="card" id="nightCircus">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/815D5sneiNL.jpg" alt="The Night Circus" height="200px"><br><br>The Night Circus by Erin Morgenstern
+                <h6>₱563.05</h6><br>
+                <button class="btn btn-primary" onclick="addItem4()" id="button">Add to Cart</button>
+            </div>
+            
+            <div class="card" id="stoneSky">
+                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478547421l/31817749._SY475_.jpg" alt="The Stone Sky" height="200px"><br><br>The Stone Sky by N.K. Jemisin
+                <h6>₱650.75</h6><br>
+                <button class="btn btn-primary" onclick="addItem5()" id="button">Add to Cart</button>
+            </div>
+        
+            <div class="card" id="alice">
+                <img src="https://images.penguinrandomhouse.com/cover/9780141321073" alt="Alice's Adventures in Wonderland" height="200px"><br><br>Alice's Adventures in Wonderland by Lewis Carroll
+                <h6>₱450.45</h6><br>
+                <button class="btn btn-primary" onclick="addItem6()" id="button">Add to Cart</button>
+            </div>
+            
+            </div>
+        <br>
+            
+            <h4>THRILLER BOOKS</h4>
+            <div class="card-group" id="thrillerBook1">
+                
+                <div class="card" id="goneGirl">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Gone_Girl_%28Flynn_novel%29.jpg/220px-Gone_Girl_%28Flynn_novel%29.jpg " alt="Gone Girl" height="200px"><br><br>Gone Girl by Gillian Flynn
+                    <h6>₱602.35</h6><br>
+                    <button class="btn btn-primary" onclick="addItem7()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="silentPatient">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/91lslnZ-btL.jpg" alt="The Silent Patient" height="200px"><br><br>The Silent Patient by Alex Michaelides
+                    <h6>₱669.95</h6><br>
+                    <button class="btn btn-primary" onclick="addItem8()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="theGuest">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81ZRCdihglL.jpg" alt="The Guest" height="200px"><br><br>The Guest by Lucy Foley
+                    <h6>₱670.00</h6><br>
+                    <button class="btn btn-primary" onclick="addItem9()" id="button">Add to Cart</button>
+                </div>
+                
+            </div>
+            <br>
+            <div class="card-group" id="thrillerBook2">
+                
+                <div class="card" id="cutSeason">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/A1+eyk290cL.jpg" alt="The Cutting Season" height="200px"><br><br>The Cutting Season by Attica Locke
+                    <h6>₱342.65</h6><br>
+                    <button class="btn btn-primary" onclick="addItem10()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="sharpObjects">
+                    <img src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/7538/9780753822210.jpg" alt="Sharp Objects" height="200px"><br><br>Sharp Objects by Gillian Flynn
+                    <h6>₱333.50</h6><br>
+                    <button class="btn btn-primary" onclick="addItem11()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="theHerd">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1580790028l/51015832._SX0_SY0_.jpg" alt="The Herd" height="200px"><br><br>The Herd by Andrea Bartz
+                    <h6>₱684.50</h6><br>
+                    <button class="btn btn-primary" onclick="addItem12()" id="button">Add to Cart</button>
+                </div>
+                
+            </div> <br>
+            
+            <h4>ROMANCE BOOKS</h4>
+             <div class="card-group" id="romanceBook1">
+                 
+                <div class="card" id="theProposal">
+                    <img src="https://images.penguinrandomhouse.com/cover/9780399587689" alt="The Proposal" height="200px"><br><br>The Proposal by Jasmine Guillory
+                    <h6>₱240.00</h6><br>
+                    <button class="btn btn-primary" onclick="addItem13()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="pridePrejudice">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/k0r15e80/book/5/0/4/pride-prejudice-original-imafkh5yx6etvjhf.jpeg?q=70" alt="Pride and Prejudice" height="200px"><br><br>Pride and Prejudice by Jane Austen
+                    <h6>₱240.00</h6><br>
+                    <button class="btn btn-primary" onclick="addItem14()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="theNotebook">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/91b7SdP54tL.jpg" alt="The Notebook" height="200px"><br><br>The Notebook by Nicholas Sparks
+                    <h6>₱210.00</h6><br>
+                    <button class="btn btn-primary" onclick="addItem15()" id="button">Add to Cart</button>
+                </div>  
+                 
+            </div>
+            <br>
+            <div class="card-group" id="romanceBook2">
+                
+                <div class="card" id="redWhite">
+                    <img src="https://kbimages1-a.akamaihd.net/7c96fc4d-85c9-43a4-a1be-b4f2e353078a/1200/1200/False/red-white-royal-blue.jpg" alt="Red, White & Royale Blue" height="200px"><br><br>Red, White & Royale Blue by Casey McQuiston
+                    <h6>₱477.75</h6><br>
+                    <button class="btn btn-primary" onclick="addItem16()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="crazy">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81n346tzU3L.jpg" alt="She Drives Me Crazy" height="200px"><br><br>She Drives Me Crazy by Leslie Kelly
+                    <h6>₱300.00</h6><br>
+                    <button class="btn btn-primary" onclick="addItem17()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="neverMet">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595853597l/51213487._SY475_.jpg" alt=" If I Never Met You" height="200px"><br><br> If I Never Met You by Mhairi McFarlane
+                    <h6>₱513.75</h6><br>
+                    <button class="btn btn-primary" onclick="addItem18()" id="button">Add to Cart</button>
+                </div> 
+                
+            </div> <br>
+            
+            <h4>FILIPINO CLASSICS</h4>
+            <div class="card-group" id="filipinoClassics1">
+                
+                <div class="card" id="noliMe">
+                    <img src="https://kbimages1-a.akamaihd.net/8d423df7-5525-4db6-8e09-4a1555da0240/353/569/90/False/noli-me-tangere-comics.jpg" alt="Noli Me Tangere" height="200px"><br><br>Noli Me Tangere by Jose Rizal
+                    <h6>₱250.00</h6><br>
+                    <button class="btn btn-primary" onclick="addItem19()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="elFili">
+                    <img src="https://i.pinimg.com/originals/50/55/fe/5055fed887d54ceae493e8846c1b0ada.jpg" alt="El Filibusterismo" height="200px"><br><br>El Filibusterismo by Jose Rizal
+                    <h6>₱250.00</h6><br>
+                    <button class="btn btn-primary" onclick="addItem20()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="floranteLaura">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537423914l/41859549._SY475_.jpg" alt="Florante at Laura" height="200px"><br><br>Florante at Laura by Francisco Baltazar
+                    <h6>₱200.00</h6><br>
+                    <button class="btn btn-primary" onclick="addItem21()" id="button">Add to Cart</button>
+                </div>
+                
+            </div>
+            <br>
+             <div class="card-group" id="filipinoClassics2">
+                 <div class="card" id="ibongAdarna">
+                     <img src="https://images-na.ssl-images-amazon.com/images/I/91lUvuK8biL.jpg" alt="Ibong Adarna" height="200px"><br><br>Ibong Adarna by Virgilio Almario<br>
+                     <h6>₱100.00</h6><br>
+                     <button class="btn btn-primary" onclick="addItem22()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="ilusTrado">
+                    <img src="https://m.media-amazon.com/images/I/51G668W3nDL.jpg" alt="Ilustrado" height="200px"><br><br>Ilustrado by Miguel Syjuco
+                    <h6>₱250.00</h6><br>
+                    <button class="btn btn-primary" onclick="addItem23()" id="button">Add to Cart</button>
+                </div>
+                
+                <div class="card" id="deKada">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/61tZKS55b3L._SX309_BO1,204,203,200_.jpg" alt="Dekada'70" height="200px"><br><br>Dekada '70 by Lualhati Bautista
+                    <h6>₱100.00</h6><br>
+                    <button class="btn btn-primary" onclick="addItem24()" id="button">Add to Cart</button>
+                 </div>   
+                 
+            </div>
+            
+            <br>
+            <div id="cartContent">
+                <div class="card">
+                    <div class="card-header"><h3>Cart</h3><p>Your items go here</p></div>
+                    <div class="card-body" id="cart_items"></div>
+					<div class="card-body"><p id="total"></p></div>
+                </div>
+            
+            </div>
+            
+            <div id="deliveryInfo">
+                    <h3>Delivery Details</h3>
+                    <div class="card-body">
+                        <form action="http://savantandsparktest.ml/checkout.php" method="post">
+                            <label for="cust_name" class="cust_name"> Name: </label>
+                            <input type="text" name="cust_name" id="cust_name" class="form-control" required>
+                            <label for="cust_email" class="cust_email">Email: </label>
+                            <input type="text" name="cust_email" id="cust_email" class="form-control" required>
+                            <label for="cust_addr" class="cust_addr">Delivery Address: </label>
+                            <input type="text" name="cust_addr" id="cust_addr" class="form-control" required><br>
+							<input type="hidden" id="custorder" name="cust_order" value="">
+							<input id="submit" class="btn btn-primary" type="submit" value="Place Order" onclick="placeOrder()">
+                        </form>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+						<script>	
+				var ShoppingCart = [];
+				var names = [];
+				var emails = [];
+				var addresses = [];
+				var a = 0;
+			
+				
+				function addItem1(){
+				var userorder = {
+					prod_name: "<b>Mary Poppins</b>", prod_price: 245 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			
+			function addItem2(){
+				var userorder = {
+					prod_name: "<b>The Lion,<br> The Witch, and<br>The Wardrobe</b>", prod_price: 290.50 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+				
+			function addItem3(){
+				var userorder = {
+					prod_name: "<b>Howl's Moving<br>Castle</b>", prod_price: 335 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			
+			function addItem4(){
+				var userorder = {
+					prod_name: "<b>The Night Circus</b>", prod_price: 563.05 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem5(){
+				var userorder = {
+					prod_name: "<b>The Stone Sky</b>", prod_price: 650.75 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem6(){
+				var userorder = {
+					prod_name: "<b>Alice's Adventures<br>in Wonderland</b>", prod_price: 450.45 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem7(){
+				var userorder = {
+					prod_name: "<b>Gone Girl</b>", prod_price: 602.35 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem8(){
+				var userorder = {
+					prod_name: "<b>The Silent Patient</b>", prod_price: 669.95 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem9(){
+				var userorder = {
+					prod_name: "<b>The Guest</b>", prod_price: 670 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem10(){
+				var userorder = {
+					prod_name: "<b>The Cutting<br>Season</b>", prod_price: 342.65 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem11(){
+				var userorder = {
+					prod_name: "<b>Sharp Objects</b>", prod_price: 333.50 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem12(){
+				var userorder = {
+					prod_name: "<b>The Herd</b>", prod_price: 684.50 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem13(){
+				var userorder = {
+					prod_name: "<b>The Proposal</b>", prod_price: 240 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem14(){
+				var userorder = {
+					prod_name: "<b>Pride and<br>Prejudice</b>", prod_price: 240 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem15(){
+				var userorder = {
+					prod_name: "<b>The Notebook</b>", prod_price: 210 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem16(){
+				var userorder = {
+					prod_name: "<b>Red, White, and<br>Royale Blue</b>", prod_price: 477.75 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem17(){
+				var userorder = {
+					prod_name: "<b>She Drives<br>Me Crazy</b>", prod_price: 300 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			
+			function addItem18(){
+				var userorder = {
+					prod_name: "<b>If I Never<br>Met You</b>", prod_price: 513.75 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+				
+			function addItem19(){
+				var userorder = {
+					prod_name: "<b>Noli Me<br>Tangere</b>", prod_price: 250 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			
+			function addItem20(){
+				var userorder = {
+					prod_name: "<b>El Filibusterismo</b>", prod_price: 250 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem21(){
+				var userorder = {
+					prod_name: "<b>Florante<br>at Laura</b>", prod_price: 200 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem22(){
+				var userorder = {
+					prod_name: "<b>Ibong Adarna</b>", prod_price: 100 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem23(){
+				var userorder = {
+					prod_name: "<b>Ilustrado</b>", prod_price: 250 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function addItem24(){
+				var userorder = {
+					prod_name: "<b>Dekada '70</b>", prod_price: 100 };
+					ShoppingCart.push(userorder);
+					display_item();
+					displayTotal();
+				}
+			function display_item() {
+				console.log(custorder);
+                var x = 0;
+				document.getElementById('cart_items').innerHTML = "";
+                for(var i=0; i<ShoppingCart.length; i++) {
+                    document.getElementById('cart_items').innerHTML += "<li class='list-group-item'><strong>" + ShoppingCart[i].prod_name + "</strong><br>Php " + Number(ShoppingCart[i].prod_price).toFixed(2) + "&nbsp|&nbsp<button style='float: right; padding: 0; border: none; background: none; color: red;'onclick='removebutton(this.id)' id='" + x++ + "' >Remove</button></li>";
+				}
+            }
+
+			function displayTotal() {
+                a = a + ShoppingCart[ShoppingCart.length-1].prod_price;
+                var total = a.toFixed(2);
+                document.getElementById('total').innerHTML = "<strong>Total: </strong>" + "Php " + total;
+            }
+
+			function placeOrder(){
+			var i = ShoppingCart.length;
+
+			while (i--) {
+				if (ShoppingCart[i] === "fake") {
+				ShoppingCart.splice(ShoppingCart.indexOf("fake"), 1);
+			}
+			}
+				console.log(ShoppingCart);
+				placeOrderFinal();
+			}
+			function placeOrderFinal(){
+			var products = JSON.stringify(ShoppingCart);
+			document.getElementById("custorder").value = products;
+			}
+			
+			function removebutton(clicked_id) {
+                var z = clicked_id;
+                a = a - ShoppingCart[z].prod_price;
+                var total = a;
+                document.getElementById('total').innerHTML = "Total: " + "Php " + total;
+                ShoppingCart.splice(z,1);
+                display_item();
+            }
+			</script>
+    </body>
+</html>
